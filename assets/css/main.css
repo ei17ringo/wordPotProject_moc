@@ -15,7 +15,7 @@
 
 body {
   /*background-color: #f2f2f2;*/
-  	background-image: url(/var/www/html/spot/bg089/bg089_10.gif);
+  	background-image: url(bg089/bg089_10.gif);
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -50,7 +50,7 @@ p {
 }
 
 /* Links */
-a {
+.headanchor {
     color: #ffbd66;
     /*word-wrap: break-word;*/
 
@@ -59,6 +59,10 @@ a {
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a {
+	color: black;
 }
 
 a:hover,
@@ -91,8 +95,8 @@ a:after {
 .navbar {
 	font-weight: 800;
 	font-size: 14px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	background-color: #ffffff;
 }
 
@@ -113,13 +117,13 @@ a:after {
 	border-color: transparent;
 }
 
-.btn {
+/*.btn {
 	padding: 10px 30px;
 	margin-bottom: 0;
 	font-size: 18px;
 	border: 5px solid transparent;
 	border-radius: 0px;
-}
+}*/
 
 .lead {
 	letter-spacing: 1px;
@@ -233,4 +237,33 @@ a:after {
 }
 #meaning:hover{
 	color: black;
+}
+
+.headlink{
+	margin-top: 25px;
+}
+.msg {
+	/*clear: both;*/
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+	height: 80px;
+	width: 850px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.msg img {
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #c0c0c0;
+}
+.msg a {
+	margin: 0;
+}
+.comment{
+	/*float: right;*/
+	height: 50px;
+	width: 500px;
+	border: 1px solid #c0c0c0;
+	float: left;
+	border-radius:5px 5px;
 }

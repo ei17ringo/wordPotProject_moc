@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bolt - Free Bootstrap 3 Theme</title>
+    <title>Word Pot</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -32,27 +32,44 @@
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#"><i class="fa fa-bolt"></i></a>
-          <div style="float:right">
-            <a>my page</a>
-          </div>
-        </div>
+        <a class="navbar-brand" href="#"><img style="width:70px;" src="word Pot.png" /></a>
+        <ul style="list-style:none;">
+          
+          <li class="headlink">
+            <a style="font-size:14px; margin-right: 18px;" class="headanchor nav navbar-nav">my page</a>
+          </li>
+          <li class="headlink">
+            <a style="font-size:14px; margin-right: 18px;" class="headanchor nav navbar-nav">単語から友達を検索</a>
+          </li>
+          <li class="navbar-right">
+            <button type="submit">ログアウト</button>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div>
-      <button>まとめて追加</button>
-    </div>
-
     
 
-    <div>
-      <div>
-      </div>
-    </div>
-
     <div style="margin: 120px;">
+      <h3 style="margin:25px 0px 30px 0px; text-decoration: underline;">あなたの単語帳    </h3>
+      <div style="float:right;">
+        <input type="text" placeholder="単語帳から検索">
+        <input type="submit" value="検索">
+      </div>
+      <div>
+        <button class="btn" style="background-color: #ffbd66;">まとめて追加</button>
+      </div>
+      <div style="border: 1px solid #c0c0c0; margin: 15px 30px 30px 0px; padding:15px; border-radius:15px 15px;">
+        <div>おてがる追加</div>
+        <form>
+          <div>
+            <input value="重要度">
+          </div>
+          <input type="text" placeholder="英単語">
+          <textarea placeholder="memo" cols="80" style="margin-left:20px;　border: 1px #c0c0c0;"></textarea>
+          <input class="btn" type="submit" value="追加" style="margin-left:20px; background-color: #ffbd66;">
+        </form>
+      </div>
+
       <table class="table">
       <tabl>
         <tr>
@@ -65,23 +82,23 @@
         <tr>
           <td>3</td>
           <td>3</td>
-          <td>disgust</td>
+          <td><a>disgust</a></td>
           <td id="meaning">〈人に〉胸を悪くさせる</td>
-          <td><button>編集</button></td>
+          <td><button class="btn btn-default">編集</button></td>
         </tr>
         <tr>
           <td>2</td>
           <td>3</td>
-          <td>confirm</td>
+          <td><a>confirm</a></td>
           <td id="meaning">〈陳述・証拠・うわさなどを〉(正しいと)確かめる</td>
-          <td><button>編集</button></td>
+          <td><button class="btn btn-default">編集</button></td>
         </tr>
         <tr>
           <td>1</td>
           <td>3</td>
-          <td>apply</td>
+          <td><a>apply</a></td>
           <td id="meaning">〈規則・原理などを〉〔…に〕適用する</td>
-          <td><button>編集</button></td>
+          <td><button class="btn btn-default">編集</button></td>
         </tr>
       </table>
     </div>
