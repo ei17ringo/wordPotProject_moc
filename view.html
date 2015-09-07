@@ -1,24 +1,139 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
 	<title>wordPot</title>
+	
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="Rateit/src/rateit.css" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="Rateit/src/jquery.rateit.min.js"></script>
+
+    <script>
+    $(function() {
+        $("#rateit1").rateit();
+    });
+</script>
+
 </head>
 <body>
-	<div>
-		<ul>
-			<li>List1</li>
-			<li>List2</li>
-			<li>List3</li>
-			<li>List4</li>
-			<li>List5</li>
-			<li>List6</li>
+	<div class="navbar navbar-default navbar-fixed-top">
+    	<div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#"><img style="width:100px;" src="word Pot.png" /></a>
+	        </div>
+    	</div>
+      <button style="width:5%;float:right;">logout</button>
+      <button style="float:right;"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
+    	<!--<div class="navbar-collapse collapse">-->
+          <ul class="nav navbar-nav navbar-right">
+          	<div style="display:inline">
+          		<li>
+          			<span style="float:left;">USERNAME さんこんにちは</span>
+          		</li>
+        	</div>
+          </ul>
+        <!--/.nav-collapse -->
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="float:left;width: 25%;">
+    	<span>categories</span>
+		<ul style="list-style: none;line-height: 3rem;">
+			<li>a</li>
+			<li>b</li>
+			<li>c</li>
+			<li>d</li>
+			<li>e</li>
+			<li>g</li>
+			<li>h</li>
+			<li>i</li>
+			<li>j</li>
+			<li>k</li>
+			<li>l</li>
+			<li>m</li>
 		</ul>
 	</div>
-	<div>
-		<div>word</div>
-		<button>LIKE</button>
-		<div>Meaning</div>
-		<div>memo</div>
+	<div class="row">
+    	<div class="col-lg-8 col-lg-offset-2 left"><h1><b>WORD</b></h1></div>
+    </div>
+	<div class="container">
+    <div style="width:50%;margin:auto;">
+      <h3>RANK</h3>
+    <div id="rateit1" data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="3" data-rateit-step="1"></div>
+		<h3>comment</h3>
+			<form class="form-horizontal" style="margin-bottom:50px;">
+          <div class="form-group">
+            <label class="control-label" for="text"></label>
+              <div class="col-sm-8">
+                <textarea style="width:541px;margin-right:auto;"></textarea>
+              </div>
+          </div>
+          <div class="form-group" style="width:20%;margin-left:auto;">
+            <div class="col-sm-4">
+            </div>
+          </div>
+      </form>
 	</div>
+</div>
+
+	<section id="contact"></section>
+	
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="col-md-6">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+					</div>
+					<div class="col-md-6">
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /social -->
+
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<p>Crafted with <i class="fa fa-heart"></i> by NexSeed</p>
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
