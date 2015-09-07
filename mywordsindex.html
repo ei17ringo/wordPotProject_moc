@@ -7,17 +7,29 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Word Pot</title>
+    <title>あなたの単語帳</title>
 
     <!-- Bootstrap core CSS -->
+    
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
+    <link href="Rateit/src/rateit.css" rel="stylesheet" type="text/css" />
+    
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/chart.js"></script>
+    <script src="Rateit/src/jquery.rateit.min.js"></script>
+    <script>
+    $(function() {
+        $(".rateit1").rateit();
+    });
+    </script>
+
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,9 +42,9 @@
   <body>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top" style="background-color:white;">
       <div class="container">
-        <a class="navbar-brand" href="#"><img style="width:70px;" src="word Pot.png" /></a>
+        <a class="navbar-brand" href="#" style="padding:0"><img style="width:70px;" src="word Pot.png" /></a>
         <ul style="list-style:none;">
           
           <li class="headlink">
@@ -42,7 +54,7 @@
             <a style="font-size:14px; margin-right: 18px;" class="headanchor nav navbar-nav">単語から友達を検索</a>
           </li>
           <li class="navbar-right">
-            <button type="submit">ログアウト</button>
+            <button type="submit" style="margin-bottom:3px;font-weight:normal;">ログアウト</button>
           </li>
         </ul>
       </div>
@@ -61,11 +73,9 @@
       <div style="border: 1px solid #c0c0c0; margin: 15px 30px 30px 0px; padding:15px; border-radius:15px 15px; background-color:white;">
         <div>おてがる追加</div>
         <form>
-          <div>
-            <input value="重要度">
-          </div>
+          <div class="rateit1" data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="3" data-rateit-step="1" style="margin-right:20px;"></div>
           <input type="text" placeholder="英単語">
-          <textarea placeholder="memo" cols="80" style="margin-left:20px;　border: 1px #c0c0c0;"></textarea>
+          <textarea placeholder="メモ" cols="80" style="margin-left:20px;　border: 1px #c0c0c0;"></textarea>
           <input class="btn" type="submit" value="追加" style="margin-left:20px; background-color: #ffbd66;">
         </form>
       </div>
@@ -81,21 +91,21 @@
         </tr>
         <tr>
           <td>3</td>
-          <td>3</td>
+          <td><div class="rateit1" data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="3" data-rateit-step="1"></div></td>
           <td><a>disgust</a></td>
           <td id="meaning">〈人に〉胸を悪くさせる</td>
           <td><button class="btn btn-default">編集</button></td>
         </tr>
         <tr>
           <td>2</td>
-          <td>3</td>
+          <td><div class="rateit1" data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="3" data-rateit-step="1"></div></td>
           <td><a>confirm</a></td>
           <td id="meaning">〈陳述・証拠・うわさなどを〉(正しいと)確かめる</td>
           <td><button class="btn btn-default">編集</button></td>
         </tr>
         <tr>
           <td>1</td>
-          <td>3</td>
+          <td><div class="rateit1" data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="3" data-rateit-step="1"></div></td>
           <td><a>apply</a></td>
           <td id="meaning">〈規則・原理などを〉〔…に〕適用する</td>
           <td><button class="btn btn-default">編集</button></td>
